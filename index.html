@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <!--********* link to css *************-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/skins/color-1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row content-btwn">
+          <div class="logo">
+            <a href="index.html" class="link-to-HS">&#9734;</a>
+          </div>
+          <div class="hamburger-btn outer-shadow hover-in-shadow">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--********************* navigation bar **********-->
+    <nav class="nav-menu">
+      <div class="close-nav-menu">&times;</div>
+      <div class="nav-menu-inner">
+        <ul>
+          <li><a href="#home" class="link-item nav-color">Home</a></li>
+          <!-- home was activ before -->
+          <li><a href="#about" class="link-item ">About</a></li>
+          <li>
+            <a href="#portfolio" class="link-item " >Portfolio</a>
+            
+            <!-- removed  -->
+          </li>
+          <li>
+            <a href="#contact" class="link-item ">Contact Me</a>
+          </li>
+          <div class="cursor"></div>
+          <!-- outer-shadow hover-in-shadow  edited-->
+        </ul>
+        <!-- ******cursor effect -->
+        <script>
+          const cursor=document.querySelector('.cursor');
+          document.addEventListener('mousemove',(e)=>{
+              cursor.style.left=e.clientX+'px';
+              cursor.style.top=e.clientY+'px';
+
+          })
+      </script>
+
+
+      </div>
+      
+    </nav>
+
+    
+    <!-- extraaaaaaaaaaa -->
+    <div class="area ">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <!--****************** home section -->
+      <section class="home-section section active" id="home">
+        <div class="container">
+          <div class="row full-screen align-items-center">
+            <div class="home-text">
+              <p>Hii! Myself</p>
+              <h2>Rutuja Mugal</h2>
+              <h3>Programming Enthusiast</h3>
+              <a href="#about" class=" btn-1 outer-shadow hover-in-shadow"
+                >More About Me</a
+              >
+              <!-- link-item removed -->
+            </div>
+            <div class="home-img">
+              <div class="img-box inner-shadow">
+                <img src="img/Screenshot (112).png" alt="" class="outer-shadow" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+    <!--*********** About section********** -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="main info">About Me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box inner-shadow">
+              <img src="img/Screenshot (112).png" alt="profile-pic" />
+            </div>
+            <!--***** socialmedia links********* -->
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/rutuja-mugal-551579203" target="_blank" class="outer-shadow hover-in-shadow"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/rutuja015" target="_blank" class="outer-shadow hover-in-shadow"
+                ><i class="fab fa-github"></i
+              ></a>
+              
+            </div>
+          </div>
+          <div class="about-info">
+            <p>
+              <span>Hii! My name is Rutuja</span> Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Deserunt voluptate voluptatem
+              aperiam. Rem, quidem dolorem. Eligendi reprehenderit, deserunt
+              reiciendis magni laboriosam tenetur, nobis repudiandae numquam
+              excepturi commodi, error eos minus?
+            </p>
+            <a
+              href="Resume/Resume_Rututja.pdf"
+              class="btn-1 outer-shadow hover-in-shadow"
+              >Download CV</a
+            >
+            <a href="#contact" class="btn-1 outer-shadow hover-in-shadow"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+        <!-- about tab -->
+        <div class="row">
+          <div class="about-tabs">
+            <span class="tab-item outer-shadow active" data-target=".education"
+              >Education And Academics</span
+            >
+          </div>
+        </div>
+        <!-- **************education -->
+        <div class="row">
+          <div class="education tab-content">
+            <div class="row">
+              <div class="timeline">
+                <!-- <div class="row"> -->
+                  <!-- timeline -->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-briefcase icon"></i>
+                      <span>Jan, 2020 -Present</span>
+                      <h3>First Year Computer Engineering Student</h3>
+                    </div>
+                  </div>
+               
+
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-briefcase icon"></i>
+                      <span>2018- Nov, 2020</span>
+                      <h3>Abeda Inamdar Junior College, Student</h3>
+                      <p>JEE Mains: 96.7 percentile</p>
+                      <p>CET: 99.97 percentile</p>
+                    </div>
+                  </div>
+                 
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-briefcase icon"></i>
+                      <span>Till 2018</span>
+                      <h3>Chavara High School, Student</h3>
+                      <p>Class 10: 96%</p>
+                      <p>Student Of The Year</p>
+                    </div>
+                  </div>
+                  
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--************ main JS*************** -->
+   
+
+    <!--************ portfolio section -->
+    <section class="portfolio-section section" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-heading="portfolio">Projects</h2>
+                </div>
+            </div>
+            <!--**************** portfolio items -->
+                  <!--*************** project1 -->
+            <div class="row portfolio-items">
+                <div class="portfolio-item">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="portfolio-item-img">
+                            <a href="https://github.com/rutuja015/Marksheet-Generator-In-C"><img src="img/portfolio/Screenshot (117).png" alt="portfolio"
+                            ></a>
+                            <!--**********p4 8.33 view project button -->
+                            
+                            
+                          </div>
+                        <p class="portfolio-item-title">Marksheet Generator In C </p>
+                        <!--******* portfolio item detail -->
+                        <!-- <div class="portfolio-item-details">
+                          <div class="row">
+                            <div class="description">
+                              <h3>Description</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus sint reprehenderit necessitatibus fuga sit doloribus labore, facilis officiis delectus blanditiis repellat illo ab eveniet molestiae corporis aperiam est obcaecati.</p>
+
+                            </div>
+                          </div>
+
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- *******project2 -->
+                <div class="portfolio-item">
+                  <div class="portfolio-item-inner outer-shadow">
+                      <div class="portfolio-item-img">
+                          <!-- <img src="img/portfolio/Screenshot (118).png" alt="portfolio" class="p2"
+                          > -->
+                          <a href="https://rutuja015.github.io/Personal-Portfolio-Website/"><img src="img/portfolio/Screenshot (118).png" alt="portfolio"
+                            ></a>
+                          <style>
+                            .p2{
+                              border: 1px solid black;
+                            }
+                          </style>
+                          <!--**********p4 8.33 view project button -->
+                          <!-- <span class="view-project">View Project</span> -->
+                        </div>
+                      <p class="portfolio-item-title">Personal Portfolio Website</p>
+                      <!--******* portfolio item detail -->
+                      <div class="portfolio-item-details">
+                        <div class="row">
+                          <div class="description">
+                            <h3>Description</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus sint reprehenderit necessitatibus fuga sit doloribus labore, facilis officiis delectus blanditiis repellat illo ab eveniet molestiae corporis aperiam est obcaecati.</p>
+
+                          </div>
+                        </div>
+
+                      </div>
+                  </div>
+              </div>
+
+              <!--********** prohect3 -->
+              <div class="portfolio-item">
+                <div class="portfolio-item-inner outer-shadow">
+                    <div class="portfolio-item-img">
+                        <img src="img/portfolio/Screenshot (119).png" alt="portfolio" class="p3"
+                        >
+                        <style>
+                          .p3{
+                            border: 1px solid black;
+                          }
+                        </style>
+                        <!--**********p4 8.33 view project button -->
+                        <!-- <span class="view-project">View Project</span> -->
+                      </div>
+                    <p class="portfolio-item-title">Lorem</p>
+                    <!--******* portfolio item detail -->
+                    <div class="portfolio-item-details">
+                      <div class="row">
+                        <div class="description">
+                          <h3>Description</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus sint reprehenderit necessitatibus fuga sit doloribus labore, facilis officiis delectus blanditiis repellat illo ab eveniet molestiae corporis aperiam est obcaecati.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--**************** project4 -->
+            <!-- <div class="portfolio-item">
+              <div class="portfolio-item-inner outer-shadow">
+                  <div class="portfolio-item-img">
+                      <img src="img/portfolio/Screenshot (119).png" alt="portfolio"
+                      > -->
+                      <!--**********p4 8.33 view project button -->
+                      <!-- <span class="view-project">View Project</span> -->
+                    <!-- </div>
+                  <p class="portfolio-item-title">Lorem</p>
+                  ******* portfolio item detail
+                  <div class="portfolio-item-details">
+                    <div class="row">
+                      <div class="description">
+                        <h3>Description</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus sint reprehenderit necessitatibus fuga sit doloribus labore, facilis officiis delectus blanditiis repellat illo ab eveniet molestiae corporis aperiam est obcaecati.</p>
+
+                      </div>
+                    </div>
+
+                  </div>
+              </div>
+            </div>-->
+
+          </div>
+        </div>
+
+    </section>
+
+   <!-- ********contact section -->
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="contact">Contact Me!</h2>
+
+          </div>
+
+        </div>
+        <div class="row">
+          <!-- contact items -->
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-phone"></i>
+              <span>Phone</span>
+              <p>123-456-789</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+              <p>rammam22@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Address</span>
+              <p>Plot No.55, Dharmraj Nagar, Korit Road, Nandurbar-425412</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+    <!-- back to top button -->
+    <a class="gototop outer-shadow hover-in-shadow" href="#home"> <i class="fas fa-arrow-up"></i></a>
+    <script src="js/main.js"></script>
+  </body>
+</html>
